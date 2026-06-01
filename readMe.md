@@ -9,7 +9,7 @@ Stage 1 : ingestion
 
 Stage 2 : clean
     - Need to ID issues
-    - Prepare for dirty dates
+    - Prepare for dirty dates, duplicates and text character errors
     - log all fixes and counts
 
 Stage 3 : Store
