@@ -23,7 +23,7 @@ In addition:
 
 To consider:
     - no current DE systems, new services will be expensive 
-    - small bespoke management via scripts be cheaper but will add technical debt!
+    - small bespoke management via scripts be cheaper but will add technical debt
+ 
     
-    
-    [Rough Process Map](image.png)
+    ![Rough Process Map](image.png)
