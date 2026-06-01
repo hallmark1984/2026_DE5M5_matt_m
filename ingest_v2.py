@@ -58,17 +58,17 @@ def store_in_db(df, tablename):
 
 
 def overlord(env_var=env, element_index=0):
-
+    env_var['start_time'][element_index] = datetime.now()
     if element_index == 2:
-        print(element_index)
         env_var['rows_input'][element_index] = 1
         env_var['rows_output'][element_index] = 1
         
         env_var['rows_dropped'][element_index] = 0
         logs = pd.DataFrame(env_var)
+        logs = logs[logs['paths']!='logs']
         store_in_db(logs, env_var['element'][element_index])
         return logs
-    env_var['end_time'][element_index] = datetime.now()
+    
     if element_index == 0:
         date_cols = ['Book checkout','Book Returned']
     else:
@@ -84,7 +84,6 @@ def overlord(env_var=env, element_index=0):
     env_var['rows_output'][element_index] = len(df)
     store_in_db(df, env_var['element'][element_index])
     return df
-
 
 
 if __name__ == 'main':
