@@ -83,7 +83,7 @@ def overlord(env_var=env, element_index=0):
     env_var['end_time'][element_index] = datetime.now()
     env_var['rows_output'][element_index] = len(df)
     store_in_db(df, env_var['element'][element_index])
-    return dfs
+    return df
 
 
 
