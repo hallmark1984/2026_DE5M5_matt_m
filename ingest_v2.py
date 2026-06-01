@@ -60,15 +60,17 @@ def store_in_db(df, tablename):
 def overlord(env_var=env, element_index=0):
     env_var['start_time'][element_index] = datetime.now()
     if element_index == 2:
-
+        print(element_index)
         env_var['rows_input'][element_index] = 1
         env_var['rows_output'][element_index] = 1
         
         env_var['rows_dropped'][element_index] = 0
+        env_var['end_time'][element_index] = datetime.now()
         logs = pd.DataFrame(env_var)
         logs = logs[logs['paths']!='logs']
+        logs['rundate'] = datetime.now().strftime('%Y%m%d')
         store_in_db(logs, env_var['element'][element_index])
-        return logs
+        return
     
     if element_index == 0:
         date_cols = ['Book checkout','Book Returned']
@@ -76,17 +78,19 @@ def overlord(env_var=env, element_index=0):
         date_cols = None
 
     df = pd.read_csv(env_var['paths'][element_index])
-    df['rundate'] = datetime.now().strftime('%Y%m%d')
+    
 
     env_var['rows_input'][element_index] = len(df)
-    df= clean_dates(df,date_cols)
-    df=  rename_cols(df)
-    df =  drop_null_records(df)
+    df = clean_dates(df,date_cols)
+    df = rename_cols(df)
+    df = drop_null_records(df)
+
+    df['rundate'] = datetime.now().strftime('%Y%m%d')
     env_var['rows_dropped'][element_index] = env_var['rows_input'][element_index]-len(df)
     env_var['end_time'][element_index] = datetime.now()
     env_var['rows_output'][element_index] = len(df)
     store_in_db(df, env_var['element'][element_index])
-    return df
+    return
 
 
 if __name__ == 'main':
