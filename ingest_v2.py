@@ -60,6 +60,7 @@ def store_in_db(df, tablename):
 def overlord(env_var=env, element_index=0):
     env_var['start_time'][element_index] = datetime.now()
     if element_index == 2:
+
         env_var['rows_input'][element_index] = 1
         env_var['rows_output'][element_index] = 1
         
@@ -75,6 +76,8 @@ def overlord(env_var=env, element_index=0):
         date_cols = None
 
     df = pd.read_csv(env_var['paths'][element_index])
+    df['rundate'] = datetime.now().strftime('%Y%m%d')
+
     env_var['rows_input'][element_index] = len(df)
     df= clean_dates(df,date_cols)
     df=  rename_cols(df)
