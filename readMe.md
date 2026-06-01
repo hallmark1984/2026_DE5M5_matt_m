@@ -10,6 +10,7 @@ Stage 1 : ingestion
 Stage 2 : clean
     - Need to ID issues
     - Prepare for dirty dates, duplicates and text character errors
+    - Enforce correct types for Dates and Integers
     - log all fixes and counts
 
 Stage 3 : Store
@@ -18,7 +19,7 @@ Stage 3 : Store
 
 
 In addition:
-    - Log activity at each stage
+    - Log activity at each stage (runtime, errors found etc)
     - Add logs to a DB for visualisation
 
 To consider:
