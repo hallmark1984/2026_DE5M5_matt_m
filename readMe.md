@@ -26,4 +26,4 @@ To consider:
     - small bespoke management via scripts be cheaper but will add technical debt
  
     
-    ![Rough Process Map](image.png)
+![Rough Process Map](image.png)
