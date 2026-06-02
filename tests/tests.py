@@ -1,5 +1,5 @@
 import unittest
-from calculator import Calculator
+from docker_demo.calculator import Calculator
 
 
 calc = Calculator(num1=8,num2=2, matrix_1=[1,1], matrix_2=[1,1])
