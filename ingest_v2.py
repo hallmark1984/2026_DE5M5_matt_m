@@ -29,9 +29,10 @@ def drop_null_records(df):
 def rename_cols(frame):
     old_cols = frame.columns
     for c in frame.columns:
-        frame[c.replace(' ','').lower()] = frame[c]
-
-    frame = frame.drop(old_cols, axis=1)
+        new_name = c.replace(' ','').lower()
+        if new_name != c:
+            frame[new_name] = frame[c]
+            frame = frame.drop(c, axis=1)
     return frame
 
 def clean_dates(frame, date_cols=None):

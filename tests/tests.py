@@ -1,9 +1,11 @@
 import unittest
 from calculator import Calculator
 
+
+calc = Calculator(num1=8,num2=2, matrix_1=[1,1], matrix_2=[1,1])
 class TestOperations(unittest.TestCase):
-    def __init__(self):
-        self.calculator = Calculator(num1=8,num2=2, matrix_1=[1,1], matrix_2=[1,1])
+    def __init__():
+        self.calculator = calc
 
     def test_sum(self):
         self.assertEqual(self.calculator.get_sum(),10,'The sum was not 10')
@@ -16,6 +18,9 @@ class TestOperations(unittest.TestCase):
 
     def test_divide(self):      
         self.assertEqual(self.calculator.get_quotient_a(),0.25,'The return was not 0.25')
+
+    def test_cross_product(self):
+        self.assertEqual(self.calculator.get_cross_product(),[29,60],'The return was not 0.25')
 
 
 
