@@ -8,7 +8,7 @@ ENTRYPOINT ["python3", "hello.py"]
 
 # Task: Create new docker container using our calculator.py 
 # to calculate 144/12 when the container runs.
-
+  
 # COMMANDS:
     # docker build -t name .
     # docker run name
