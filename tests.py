@@ -4,7 +4,7 @@ from docker_demo.calculator import Calculator
 
 calc = Calculator(num1=8,num2=2, matrix_1=[1,1], matrix_2=[1,1])
 class TestOperations(unittest.TestCase):
-    def __init__():
+    def __init__(self):
         self.calculator = calc
 
     def test_sum(self):
