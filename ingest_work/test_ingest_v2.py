@@ -12,7 +12,7 @@ class TestApp(unittest.TestCase):
             }
     good_data = {
         'id':[0,1,3]
-        ,'dates':['2026-01-01','2020-12-31','1984-09-02']
+        ,'dates':['2026-01-01','2020-12-30','1984-09-02']
         ,'texts':['waffle','cone','smoothie']
             }
     good_df = pd.DataFrame(good_data)
