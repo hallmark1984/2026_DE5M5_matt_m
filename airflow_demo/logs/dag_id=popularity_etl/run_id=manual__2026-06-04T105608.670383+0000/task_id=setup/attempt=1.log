@@ -1,0 +1,19 @@
+[2026-06-04T10:56:16.435+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-06-04T10:56:16.603+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: popularity_etl.setup manual__2026-06-04T10:56:08.670383+00:00 [queued]>
+[2026-06-04T10:56:16.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: popularity_etl.setup manual__2026-06-04T10:56:08.670383+00:00 [queued]>
+[2026-06-04T10:56:16.664+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-06-04T10:56:18.369+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): setup> on 2026-06-04 10:56:08.670383+00:00
+[2026-06-04T10:56:18.402+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=45) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2026-06-04T10:56:18.418+0000] {standard_task_runner.py:64} INFO - Started process 49 to run task
+[2026-06-04T10:56:18.408+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'popularity_etl', 'setup', 'manual__2026-06-04T10:56:08.670383+00:00', '--job-id', '13', '--raw', '--subdir', 'DAGS_FOLDER/second_dag.py', '--cfg-path', '/tmp/tmpnhzj_lfx']
+[2026-06-04T10:56:18.429+0000] {standard_task_runner.py:91} INFO - Job 13: Subtask setup
+[2026-06-04T10:56:18.873+0000] {task_command.py:426} INFO - Running <TaskInstance: popularity_etl.setup manual__2026-06-04T10:56:08.670383+00:00 [running]> on host 56e79d4b55fa
+[2026-06-04T10:56:19.427+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='popularity_etl' AIRFLOW_CTX_TASK_ID='setup' AIRFLOW_CTX_EXECUTION_DATE='2026-06-04T10:56:08.670383+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-06-04T10:56:08.670383+00:00'
+[2026-06-04T10:56:19.445+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-06-04T10:56:19.615+0000] {logging_mixin.py:188} INFO - Running: Catcher in the Rye 
+[2026-06-04T10:56:39.615+0000] {logging_mixin.py:188} INFO - Running: Lord of the rings the two towers
+[2026-06-04T10:56:42.039+0000] {logging_mixin.py:188} INFO - Running: Lord of the rings the return of the kind
+[2026-06-04T10:56:44.446+0000] {logging_mixin.py:188} INFO - Running: The hobbit
+[2026-06-04T10:56:47.804+0000] {logging_mixin.py:188} INFO - Running: Dune 
