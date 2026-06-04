@@ -1,0 +1,21 @@
+[2026-06-04T09:31:15.238+0000] {processor.py:161} INFO - Started process (PID=67) to work on /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:15.239+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ingest_v2.py for tasks to queue
+[2026-06-04T09:31:15.242+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:15.241+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:15.491+0000] {processor.py:840} INFO - DAG(s) 'library_etl' retrieved from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:15.506+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:15.505+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-04T09:31:15.510+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:15.510+0000] {dag.py:3947} INFO - Setting next_dagrun for library_etl to None, run_after=None
+[2026-06-04T09:31:15.517+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ingest_v2.py took 0.285 seconds
+[2026-06-04T09:31:45.842+0000] {processor.py:161} INFO - Started process (PID=69) to work on /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:45.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ingest_v2.py for tasks to queue
+[2026-06-04T09:31:45.846+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:45.845+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:46.256+0000] {processor.py:840} INFO - DAG(s) 'library_etl' retrieved from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:31:46.278+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:46.277+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-04T09:31:46.284+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:31:46.283+0000] {dag.py:3947} INFO - Setting next_dagrun for library_etl to None, run_after=None
+[2026-06-04T09:31:46.292+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ingest_v2.py took 0.458 seconds
+[2026-06-04T09:32:16.582+0000] {processor.py:161} INFO - Started process (PID=71) to work on /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:32:16.582+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ingest_v2.py for tasks to queue
+[2026-06-04T09:32:16.584+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:32:16.583+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:32:16.826+0000] {processor.py:840} INFO - DAG(s) 'library_etl' retrieved from /opt/airflow/dags/ingest_v2.py
+[2026-06-04T09:32:16.840+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:32:16.840+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2026-06-04T09:32:16.844+0000] {logging_mixin.py:188} INFO - [2026-06-04T09:32:16.844+0000] {dag.py:3947} INFO - Setting next_dagrun for library_etl to None, run_after=None
+[2026-06-04T09:32:16.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ingest_v2.py took 0.275 seconds
