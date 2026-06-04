@@ -39,6 +39,6 @@ To consider:
 
  - DAG class then runs each as a PythonOperator object with task_id and the function name.
  - Keep to 1 script per file, ensure unique naming 
- 
 
+![DAG of ETL](DAG_for_ETL.png)
 ![Completed Airflow Run](completed_airflow_run.png)
