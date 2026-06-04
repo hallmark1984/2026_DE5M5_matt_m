@@ -103,7 +103,7 @@ def final_log():
 with DAG(
     dag_id="library_etl",
     start_date=datetime(2024, 1, 1),
-    schedule=None,
+    schedule="@daily",
     catchup=False,
     tags=["library", "etl"],
 ) as dag:

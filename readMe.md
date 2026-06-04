@@ -17,7 +17,6 @@ Stage 3 : Store
     - Store outputs in DB
     - aggreagte fixes, create output of impacts / success/ fails etc
 
-
 In addition:
     - Log activity at each stage (runtime, errors found etc)
     - Add logs to a DB for visualisation
@@ -26,5 +25,20 @@ To consider:
     - no current DE systems, new services will be expensive 
     - small bespoke management via scripts be cheaper but will add technical debt
  
+
+
+
     
 ![Rough Process Map](image.png)
+
+# What I have Done
+
+- Airflow used to manage pipeline
+- Write transform functions for your data, then create a DAG() object with dag_id as the name in airflow, start and schedule ("@daily", "@hourly" or cron style)
+- tags allow for grouping of processes
+
+ - DAG class then runs each as a PythonOperator object with task_id and the function name.
+ - Keep to 1 script per file, ensure unique naming 
+ 
+
+![Completed Airflow Run](completed_airflow_run.png)

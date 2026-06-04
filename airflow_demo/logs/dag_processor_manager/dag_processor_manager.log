@@ -1,0 +1,81 @@
+[2026-06-04T09:56:16.637+0000] {manager.py:470} INFO - Processing files using up to 2 processes at a time 
+[2026-06-04T09:56:16.685+0000] {manager.py:471} INFO - Process each file at most once every 30 seconds
+[2026-06-04T09:56:16.715+0000] {manager.py:472} INFO - Checking for new files in /opt/airflow/dags every 300 seconds
+[2026-06-04T09:56:16.735+0000] {manager.py:737} INFO - Searching for files in /opt/airflow/dags
+[2026-06-04T09:56:17.420+0000] {manager.py:740} INFO - There are 1 files in /opt/airflow/dags
+[2026-06-04T09:56:19.733+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ingest_v2.py     25  0.72s             0           0
+================================================================================
+[2026-06-04T09:56:49.933+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  ----------
+/opt/airflow/dags/ingest_v2.py     25  30.95s            0           0
+================================================================================
+[2026-06-04T09:56:50.937+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/ingest_v2.py exited with return code 1.
+[2026-06-04T09:57:19.992+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py                           0          -1  31.91s          2026-06-04T09:56:50
+================================================================================
+[2026-06-04T09:57:50.630+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py     27  28.03s            0          -1  31.91s          2026-06-04T09:56:50
+================================================================================
+[2026-06-04T09:57:55.034+0000] {manager.py:1016} ERROR - Processor for /opt/airflow/dags/ingest_v2.py exited with return code 1.
+[2026-06-04T09:58:21.150+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py                           0          -1  32.63s          2026-06-04T09:57:55
+================================================================================
+[2026-06-04T09:58:52.072+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py     29  25.12s            0          -1  32.63s          2026-06-04T09:57:55
+================================================================================
+[2026-06-04T09:59:17.146+0000] {manager.py:1203} ERROR - Processor for /opt/airflow/dags/ingest_v2.py with PID 29 started at 2026-06-04T09:58:26.949586+00:00 has timed out, killing it.
+[2026-06-04T09:59:22.211+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                       PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py                           0           1  50.20s          2026-06-04T09:59:17
+================================================================================
+[2026-06-04T09:59:52.594+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py     31  5.12s             0           1  50.20s          2026-06-04T09:59:17
+================================================================================
+[2026-06-04T10:00:23.464+0000] {manager.py:878} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                         PID  Runtime      # DAGs    # Errors  Last Runtime    Last Run
+------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/opt/airflow/dags/ingest_v2.py     31  36.02s            0           1  50.20s          2026-06-04T09:59:17
+================================================================================
+[2026-06-04T10:00:28.945+0000] {manager.py:452} INFO - Exiting gracefully upon receiving signal 15
